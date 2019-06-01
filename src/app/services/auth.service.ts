@@ -1,15 +1,11 @@
-
-import {of as observableOf,  Observable } from 'rxjs';
-
-import {switchMap} from 'rxjs/operators';
-import { UserService } from './user.service';
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
 import * as firebase from 'firebase';
 import { ActivatedRoute } from '@angular/router';
 import { AppUser } from '../models/app-user';
-
-
+import { UserService } from './user.service';
+import { of as observableOf, Observable } from 'rxjs';
+import { switchMap } from 'rxjs/operators';
 
 @Injectable()
 export class AuthService {

@@ -7,11 +7,12 @@ import { Subscription } from 'rxjs';
     templateUrl: './my-orders.component.html',
     styleUrls: ['./my-orders.component.css']
 })
+
 export class MyOrdersComponent implements OnInit, OnDestroy {
     orders;
     subscription: Subscription;
 
-    constructor(private orderService: OrderService) {}
+    constructor(private orderService: OrderService) { }
 
     ngOnInit() {
         this.subscription = this.orderService.getOrders()

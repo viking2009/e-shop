@@ -4,7 +4,7 @@ import { ShoppingCartItem } from './shopping-cart-item';
 export class ShoppingCart {
     items: ShoppingCartItem[] = [];
 
-    constructor(public itemsMap: {[productId: string]: ShoppingCartItem}) {
+    constructor(public itemsMap: { [productId: string]: ShoppingCartItem }) {
         // ensure proper initialization
         this.itemsMap = itemsMap || {};
         if (!itemsMap) return;
@@ -27,7 +27,7 @@ export class ShoppingCart {
     get totalPrice() {
         let sum = 0;
         for (const productId in this.items)
-            sum +=  this.items[productId].totalPrice;
+            sum += this.items[productId].totalPrice;
         return sum;
     }
 

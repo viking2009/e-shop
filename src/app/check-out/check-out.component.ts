@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
     templateUrl: './check-out.component.html',
     styleUrls: ['./check-out.component.css']
 })
+
 export class CheckOutComponent implements OnInit, OnDestroy {
     shipping = {};
     cart: ShoppingCart;
@@ -23,7 +24,7 @@ export class CheckOutComponent implements OnInit, OnDestroy {
         private shoppingCartService: ShoppingCartService,
         private orderService: OrderService,
         private authService: AuthService,
-        private router: Router) {}
+        private router: Router) { }
 
     async ngOnInit() {
         const cart$ = await this.shoppingCartService.getCart();

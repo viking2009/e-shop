@@ -35,7 +35,7 @@ import { ShoppingCartService } from './services/shopping-cart.service';
 import { OrderService } from './services/order.service';
 
 import { CustomFormsModule } from 'ng2-validation';
-import { MatTableModule, MatPaginatorModule, MatSortModule, MatInputModule  } from '@angular/material';
+import { MatTableModule, MatPaginatorModule, MatSortModule, MatInputModule } from '@angular/material';
 
 @NgModule({
     declarations: [
@@ -69,7 +69,7 @@ import { MatTableModule, MatPaginatorModule, MatSortModule, MatInputModule  } fr
         AngularFireAuthModule,
         NgbModule.forRoot(),
         RouterModule.forRoot([
-            { path: 'login' , component: LoginComponent },
+            { path: 'login', component: LoginComponent },
             { path: '', component: ProductsComponent },
             { path: 'products', component: ProductsComponent },
             { path: 'shopping-cart', component: ShoppingCartComponent },
@@ -110,4 +110,5 @@ import { MatTableModule, MatPaginatorModule, MatSortModule, MatInputModule  } fr
     ],
     bootstrap: [AppComponent]
 })
+
 export class AppModule { }

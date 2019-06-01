@@ -11,6 +11,7 @@ import { CategoryService } from './../services/category.service';
     templateUrl: './products.component.html',
     styleUrls: ['./products.component.css']
 })
+
 export class ProductsComponent implements OnInit {
     // initialize arrays to avoid getting undefined in the first place
     products = [];
@@ -26,7 +27,7 @@ export class ProductsComponent implements OnInit {
         private cartService: ShoppingCartService) { }
 
     async ngOnInit() {
-        this.productService.getProducts().subscribe(products =>  {
+        this.productService.getProducts().subscribe(products => {
             // get all the products when first loading the page
             this.filteredProducts = this.products = products;
         });
@@ -43,4 +44,3 @@ export class ProductsComponent implements OnInit {
         this.cart$ = await this.cartService.getCart();
     }
 }
-

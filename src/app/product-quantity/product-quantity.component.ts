@@ -7,11 +7,12 @@ import { ShoppingCartService } from './../services/shopping-cart.service';
     templateUrl: './product-quantity.component.html',
     styleUrls: ['./product-quantity.component.css']
 })
+
 export class ProductQuantityComponent {
     @Input() product: Product;
     @Input() shoppingCart;
 
-    constructor(private cartService: ShoppingCartService) {}
+    constructor(private cartService: ShoppingCartService) { }
 
     addToCart() {
         this.cartService.addToCart(this.product);

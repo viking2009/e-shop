@@ -8,6 +8,7 @@ import { ShoppingCart } from './../models/shopping-cart';
     templateUrl: './product-card.component.html',
     styleUrls: ['./product-card.component.css']
 })
+
 export class ProductCardComponent {
     @Input() product: Product;
     @Input() isBtnVisible = true;

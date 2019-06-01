@@ -16,7 +16,7 @@ export class BsNavbarComponent implements OnInit {
     constructor(
         private auth: AuthService,
         private router: Router,
-        private shoppingCartService: ShoppingCartService) {}
+        private shoppingCartService: ShoppingCartService) { }
 
     async ngOnInit() {
         this.auth.appUser$.subscribe(appUser => this.appUser = appUser);
@@ -24,7 +24,7 @@ export class BsNavbarComponent implements OnInit {
     }
 
     logout() {
-       this.auth.logout();
-       this.router.navigate(['/login']);
+        this.auth.logout();
+        this.router.navigate(['/login']);
     }
 }

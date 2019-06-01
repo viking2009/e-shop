@@ -1,11 +1,10 @@
 import { TestBed, inject } from '@angular/core/testing';
-
 import { CategoryService } from './category.service';
 
 describe('CategoryService', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
-        providers: [CategoryService]
+            providers: [CategoryService]
         });
     });
 

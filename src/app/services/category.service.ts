@@ -1,11 +1,10 @@
 
-import {map} from 'rxjs/operators';
-import { AngularFireDatabase } from 'angularfire2/database';
 import { Injectable } from '@angular/core';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { map } from 'rxjs/operators';
 
 @Injectable()
 export class CategoryService {
-
     constructor(private db: AngularFireDatabase) { }
 
     getCategories() {
@@ -17,7 +16,7 @@ export class CategoryService {
                         const key = item.payload.key;
                         const data = { key, ...item.payload.val() };
                         return data;
-            });
-        }));
+                    });
+                }));
     }
 }

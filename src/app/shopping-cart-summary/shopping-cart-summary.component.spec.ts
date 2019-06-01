@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ShoppingCartSummaryComponent } from './shopping-cart-summary.component';
 
 describe('ShoppingCartSummaryComponent', () => {
@@ -8,9 +7,9 @@ describe('ShoppingCartSummaryComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-        declarations: [ ShoppingCartSummaryComponent ]
+            declarations: [ShoppingCartSummaryComponent]
         })
-        .compileComponents();
+            .compileComponents();
     }));
 
     beforeEach(() => {

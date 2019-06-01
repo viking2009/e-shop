@@ -6,6 +6,7 @@ import { ShoppingCartService } from './../services/shopping-cart.service';
     templateUrl: './shopping-cart.component.html',
     styleUrls: ['./shopping-cart.component.css']
 })
+
 export class ShoppingCartComponent implements OnInit {
     cart$;
 

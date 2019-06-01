@@ -1,15 +1,14 @@
 
-import {take} from 'rxjs/operators';
 import { Component } from '@angular/core';
 import { CategoryService } from './../../services/category.service';
 import { ProductService } from './product.service';
 import { Router, ActivatedRoute } from '@angular/router';
-
+import { take } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-product-form',
-  templateUrl: './product-form.component.html',
-  styleUrls: ['./product-form.component.css']
+    selector: 'app-product-form',
+    templateUrl: './product-form.component.html',
+    styleUrls: ['./product-form.component.css']
 })
 export class ProductFormComponent {
     categories$;

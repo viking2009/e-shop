@@ -5,10 +5,10 @@ export class Order {
     items: any[];
 
     constructor(
-            public userId: string,
-            public shipping: any,
-            public shoppingCart: ShoppingCart
-        ) {
+        public userId: string,
+        public shipping: any,
+        public shoppingCart: ShoppingCart
+    ) {
         this.datePlaced = new Date().getTime();
 
         shoppingCart.items.map(i => {
