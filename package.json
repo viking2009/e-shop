@@ -54,7 +54,7 @@
         "braces": "^2.3.2",
         "codelyzer": "^4.5.0",
         "fstream": "^1.0.12",
-        "handlebars": "^4.1.2",
+        "handlebars": "^4.5.3",
         "jasmine": "^3.3.1",
         "jasmine-core": "~3.1.0",
         "jasmine-spec-reporter": "~4.2.1",
